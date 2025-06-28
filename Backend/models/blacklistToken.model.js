@@ -7,7 +7,7 @@ const blacklistTokenSchema = new mongoose.Schema({
     token: {
         type: String,
         required: true,
-        unique: true
+        unique: true 
     },
     createdAt: {
         type: Date,
@@ -31,3 +31,9 @@ captaninSchema.statics.hashPassword = async function (password) {
 }
 
 module.exports = mongoose.model('BlacklistToken', blacklistTokenSchema);
+
+
+
+
+
+
